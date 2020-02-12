@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <section>
+    <div class="artists">
+      <div class="container">
+        <div class="artists_inside">
+          <div class="artists_header">
+            <div class="artists_header-title">
+              Artist Directory
+            </div>
+            <div class="artists_header-input">
+              <div class="artists_header-box">
+                <input type="text" placeholder="Search" id="searchInput"/>
+              </div>
+              <button onclick="showToggle()" id="artists_header-button">
+                Add artist
+              </button>
+              <button onclick="searchFilter()" id="artists_header-search-button">
+                Search
+              </button>
+            </div>
+          </div>
+          <div id="artists_hidden">
+            <div>
+              <input id="artist" type="text" placeholder="Artist Name" maxlength="40"/>
+            </div>
+            <div>
+              <input id="about" type="text" placeholder="About artist" maxlength="40"/>
+            </div>
+            <div>
+              <input id="imageurl" type="text" placeholder="Image url" />
+            </div>
+            <div>
+              <button class="artist_hidden-button" onclick="addArtist()">Add</button>
+            </div>
+          </div>
+          <div id="artists_items">
+            <!-- <div class="artists_item">
+              <div class="artists_item-left">
+                <img src="https://randomuser.me/api/portraits/med/women/1.jpg" alt="img1" />
+              </div>
+              <div class="artists_item-right">
+                <div class="artists_item-right-description">
+                  <h3>Barot Bellingham</h3>
+                  <p>Royal Academy of Painting and Sculpture</p>
+                </div>
+              </div>
+            </div>
+            <div class="artists_item">
+              <div class="artists_item-left">
+                <img src="https://randomuser.me/api/portraits/med/men/1.jpg" alt="img2" />
+              </div>
+              <div class="artists_item-right">
+                <div class="artists_item-right-description">
+                  <h3>Jonathan G. Ferrar II</h3>
+                  <p>Artist to Watch in 2012</p>
+                </div>
+              </div>
+            </div>
+            <div class="artists_item">
+              <div class="artists_item-left">
+                <img src="https://randomuser.me/api/portraits/med/women/2.jpg" alt="img3" />
+              </div>
+              <div class="artists_item-right">
+                <div class="artists_item-right-description">
+                  <h3>Hillary Hewitt Goldwynn-Post</h3>
+                  <p>New York University</p>
+                </div>
+              </div>
+            </div>
+            <div class="artists_item">
+              <div class="artists_item-left">
+                <img src="https://randomuser.me/api/portraits/med/men/2.jpg" alt="img5" />
+              </div>
+              <div class="artists_item-right">
+                <div class="artists_item-right-description">
+                  <h3>Hassum Harrod</h3>
+                  <p>Art College in New Dehli</p>
+                </div>
+              </div>
+            </div>
+            <div class="artists_item">
+              <div class="artists_item-left">
+                <img src="https://randomuser.me/api/portraits/med/women/3.jpg" alt="img6" />
+              </div>
+              <div class="artists_item-right">
+                <div class="artists_item-right-description">
+                  <h3>Jennifer Jerome</h3>
+                  <p>Web Developer in 2020</p>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
